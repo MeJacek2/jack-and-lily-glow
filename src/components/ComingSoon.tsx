@@ -69,15 +69,25 @@ const ComingSoon = () => {
           {/* Logo */}
           <div className="mb-8 animate-fade-in-up">
             <img 
-              src="/lovable-uploads/fb52790e-de03-4d14-a667-be5a85ee47e0.png" 
+              src="./lovable-uploads/fb52790e-de03-4d14-a667-be5a85ee47e0.png" 
               alt="Jack & Lily Nursery" 
               className="w-64 h-auto mx-auto drop-shadow-lg"
             />
           </div>
 
           {/* Coming Soon Text */}
-          <h1 className="text-6xl md:text-7xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-6 animate-fade-in-up">
-            Coming Soon
+          <h1 className="text-6xl md:text-7xl font-bold mb-6 animate-fade-in-up">
+            <span className="text-pink-500">C</span>
+            <span className="text-lime-400">O</span>
+            <span className="text-yellow-400">M</span>
+            <span className="text-blue-500">I</span>
+            <span className="text-orange-500">N</span>
+            <span className="text-cyan-500">G</span>
+            <br />
+            <span className="text-blue-600">S</span>
+            <span className="text-lime-400">O</span>
+            <span className="text-yellow-400">O</span>
+            <span className="text-purple-500">N</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-foreground/80 mb-8 leading-relaxed animate-slide-in-right">
