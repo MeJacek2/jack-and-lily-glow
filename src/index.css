@@ -8,8 +8,8 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Jack & Lily Nursery Brand Colors */
-    --background: 35 45% 95%;
+    /* Jack & Lily Nursery Brand Colors - Inspired by Modern Learning Space */
+    --background: 180 25% 85%;
     --foreground: 210 15% 20%;
 
     --card: 0 0% 100%;
@@ -21,33 +21,33 @@ All colors MUST be HSL.
     --primary: 10 75% 60%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 185 35% 45%;
+    --secondary: 185 45% 35%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 35 25% 85%;
+    --muted: 180 20% 75%;
     --muted-foreground: 210 15% 45%;
 
-    --accent: 25 55% 75%;
-    --accent-foreground: 210 15% 20%;
+    --accent: 25 65% 65%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 35 25% 85%;
+    --border: 180 20% 75%;
     --input: 0 0% 100%;
     --ring: 10 75% 60%;
 
     --radius: 1rem;
 
-    /* Glass Effects */
-    --glass-bg: 0 0% 100% / 0.15;
-    --glass-border: 0 0% 100% / 0.25;
-    --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    /* Enhanced Glass Effects */
+    --glass-bg: 255 255 255 / 0.25;
+    --glass-border: 255 255 255 / 0.35;
+    --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(10 75% 60%) 0%, hsl(25 55% 75%) 100%);
-    --gradient-secondary: linear-gradient(135deg, hsl(185 35% 45%) 0%, hsl(200 40% 60%) 100%);
-    --gradient-bg: linear-gradient(135deg, hsl(35 45% 95%) 0%, hsl(25 35% 90%) 100%);
+    /* Rich Gradients Inspired by Modern Nursery */
+    --gradient-primary: linear-gradient(135deg, hsl(10 75% 60%) 0%, hsl(25 65% 65%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(185 45% 35%) 0%, hsl(200 40% 45%) 100%);
+    --gradient-bg: linear-gradient(135deg, hsl(185 45% 35%) 0%, hsl(180 25% 85%) 35%, hsl(25 65% 65%) 100%);
 
     /* Animations */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -123,21 +123,35 @@ All colors MUST be HSL.
 
 @layer components {
   .glass {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.35);
     box-shadow: var(--glass-shadow);
   }
 
   .glass-card {
     @apply glass rounded-3xl p-8;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.3);
     transition: var(--transition-smooth);
   }
 
   .glass-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 60px 0 rgba(31, 38, 135, 0.25);
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 20px 60px 0 rgba(31, 38, 135, 0.4);
+  }
+
+  .glass-form {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 15px 45px 0 rgba(31, 38, 135, 0.35);
   }
 
   .floating-element {

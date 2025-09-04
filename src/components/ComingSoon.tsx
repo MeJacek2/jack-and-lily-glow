@@ -107,7 +107,7 @@ const ComingSoon = () => {
 
           {/* Signup Form */}
           <form onSubmit={handleSubmit} className="space-y-4 max-w-md mx-auto animate-slide-in-right">
-            <div className="glass rounded-2xl p-6">
+            <div className="glass-form rounded-2xl p-6">
               <h3 className="text-2xl font-semibold mb-6 text-foreground">
                 <Mail className="inline w-6 h-6 mr-2 text-primary" />
                 Stay Updated
@@ -119,14 +119,14 @@ const ComingSoon = () => {
                   placeholder="Your Name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="glass border-white/30 placeholder:text-foreground/60 text-foreground bg-white/20 focus:bg-white/30 transition-all duration-300"
+                  className="glass border-white/40 placeholder:text-foreground/70 text-foreground bg-white/30 focus:bg-white/40 transition-all duration-300"
                 />
                 <Input
                   type="email"
                   placeholder="your.email@example.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="glass border-white/30 placeholder:text-foreground/60 text-foreground bg-white/20 focus:bg-white/30 transition-all duration-300"
+                  className="glass border-white/40 placeholder:text-foreground/70 text-foreground bg-white/30 focus:bg-white/40 transition-all duration-300"
                 />
                 <Button 
                   type="submit" 
