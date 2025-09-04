@@ -76,19 +76,31 @@ const ComingSoon = () => {
           </div>
 
           {/* Coming Soon Text */}
-          <h1 className="text-6xl md:text-7xl font-bold mb-6 animate-fade-in-up">
-            <span className="text-pink-500">C</span>
-            <span className="text-lime-400">O</span>
-            <span className="text-yellow-400">M</span>
-            <span className="text-blue-500">I</span>
-            <span className="text-orange-500">N</span>
-            <span className="text-cyan-500">G</span>
-            <br />
-            <span className="text-blue-600">S</span>
-            <span className="text-lime-400">O</span>
-            <span className="text-yellow-400">O</span>
-            <span className="text-purple-500">N</span>
-          </h1>
+          <div className="relative mb-6 animate-fade-in-up">
+            <h1 className="text-6xl md:text-7xl font-bold leading-none">
+              <div className="flex items-center justify-center">
+                <span className="text-pink-500 -mr-2">C</span>
+                <span className="text-lime-400 -mr-2">O</span>
+                <span className="text-yellow-400 -mr-2">M</span>
+                <span className="text-blue-500 -mr-2">I</span>
+                <span className="text-orange-500 -mr-2">N</span>
+                <span className="text-cyan-500">G</span>
+              </div>
+              <div className="flex items-center justify-center mt-2">
+                <span className="text-blue-600 -mr-2">S</span>
+                <span className="text-lime-400 -mr-2">O</span>
+                <span className="text-yellow-400 -mr-2">O</span>
+                <span className="text-purple-500">N</span>
+              </div>
+            </h1>
+            {/* Sparkle decorations */}
+            <div className="sparkle" style={{top: '10%', left: '5%'}}>✨</div>
+            <div className="sparkle" style={{top: '20%', right: '10%'}}>⭐</div>
+            <div className="sparkle" style={{bottom: '30%', left: '8%'}}>✨</div>
+            <div className="sparkle" style={{bottom: '15%', right: '5%'}}>⭐</div>
+            <div className="sparkle" style={{top: '50%', left: '2%'}}>✨</div>
+            <div className="sparkle" style={{top: '60%', right: '3%'}}>⭐</div>
+          </div>
           
           <p className="text-xl md:text-2xl text-foreground/80 mb-8 leading-relaxed animate-slide-in-right">
             We're creating a magical learning environment where little minds blossom and grow. 
