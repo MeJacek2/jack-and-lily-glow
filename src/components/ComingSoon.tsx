@@ -5,7 +5,7 @@ import { useToast } from "@/hooks/use-toast";
 import { Mail, Heart, Star, Sparkles } from "lucide-react";
 
 const FloatingShape = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => (
-  <div className={`floating-element absolute opacity-20 ${className}`}>
+  <div className={`floating-element absolute opacity-60 ${className}`}>
     {children}
   </div>
 );
